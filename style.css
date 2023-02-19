@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Dancing Script', cursive;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    height: 65px;
+    background-color: black;
+    color: white ;
+}
+nav ul li {
+    padding: 0 12px ;
+
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+}
+.container{
+    min-height: 62vh;
+    background-color: black;
+    color: white;
+    font-family: 'Teko', sans-serif;
+    /* display: flex; */
+    width: 70%;
+    margin: 23px auto ;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('you.jpeg');
+}
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    
+}
+.icons{
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+#myProgessBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItem{
+height: 50px;
+display: flex;
+background-color: white;
+width: 80%;
+color: black;
+margin: 10px 0 ;
+justify-content: space-between;
+align-items: center;
+border-radius: 34px;
+}
+
+.songItem img{
+width: 47px;
+margin: 0 23px;
+border-radius: 40px;
+}
+
+.timestamp{
+    
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo {
+    position : absolute;
+    left : 10vw;
+    font-family: 'Teko', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.8s ease-in;
+}
+@media screen and (min-width: 320px) {
+    .songItem img{
+        width: 30px;
+        margin: 0 18px;
+        border-radius: 40px;
+        }
+
+        .songInfo {
+            position : absolute;
+            font-family: 'Teko', sans-serif;
+        }
+        .songItem{
+            border-radius: 15px;
+            width:95%;
+        }
+        .container{
+            width: 85%;
+        }
+  }
